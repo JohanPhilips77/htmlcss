@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Webontwikkelaar taak</title>
+    <link rel="stylesheet" href="css/webontwikkelaar2.css">
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- START HEADER -->
+    <header>
+        <!-- START TOPBANNER LOGIN -->
+        <div class="topbanner">
+            <div class="wrapper_auto">
+                <form method="get" action="/search">
+                    <label for="username">username</label>
+                    <input type="text" name="username" id="username">
+                    <label for="pw">wachtwoord</label>
+                    <input type="password" name="pw" id="pw">
+                    <input type="submit" class="button" value="aanmelden">
+                </form>
+            </div>
+        </div>
+        <!-- EINDE TOPBANNER LOGIN-->
+
+        <!-- START LOGO EN HOOFDMENU-->
+        <div class="wrapper_auto">
+            <!-- START LOGO -->
+            <div id="logo">
+                <a href="webontwikkelaar_home.html"><img src="img/vdab_200.png" alt="Logo VDAB" title="Logo van de Vdab"></a>
+            </div>
+            <!-- EINDE LOGO -->
+
+            <!-- START HOOFDMENU-->
+            <nav id="hoofdmenu">
+                <ul>
+                    <li><a href="webontwikkelaar_wat.html">Wat we doen</a></li>
+                    <li><a href="webontwikkelaar_wie.html">Wie we zijn</a></li>
+                    <li><a href="opleidingscentrum_portfolio.html">Portfolio</a></li>
+                    <li><a href="opleidingscentrum_contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- EINDE HOOFDMENU-->
+        </div>
+        <!-- EINDE LOGO EN HOOFDMENU-->
+
+    </header>
+    <!-- EINDE HEADER -->
+
+    <!-- BREAK LIJN -->
+    <div class="borderlijn_met_schaduw"></div>
+
+    <!-- START PORTFOLIO -->
+    <section class="achtergronddonker clearFix">
+        <div id="wiewezijn" class="wrapper_visible">
+            <!--inhoud-->
+            <img src="img/scrum.jpg" class="vlotRechts roteerRechts dikkeSchaduw" alt="Scrum" title="Scrum">
+            <h1>Portfolio</h1>
+            <h2>Wat webben we reeds gedaan</h2>
+            <p>Via de vdab opleiding PHP hebben we reeds enkel opdrachten moeten uitvoeren in HTML en Javascript. Hieronder een kort overzicht</p>
+        </div>
+    </section>
+    <!-- EINDE PORTFOLIO -->
+
+    <!-- BREAK LIJN -->
+    <div class="borderlijn_met_schaduw"></div>
+
+    <!-- START HTML PROJECTEN -->
+    <section>
+        <div class="wrapper_auto">
+            <div id="html_projecten">
+                <h2>HTML en CSS</h2>
+                <img src="img/html_128.png" alt="Logo HTML5" title="Logo HTML5">
+                <img src="img/css_128.png" alt="Logo CSS" title="Logo CSS">
+                <div class="vier_kolommen">
+                    <article>
+                        <h3>Opdracht 1 - Scampi met chorizo en trostomaten</h3>
+                        <div>
+                            <p>Omgaan met ordered en unordered lists</p>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>Opdracht 2 - Het weer</h3>
+                        <div>
+                            <p>Omgaan met tables. Twee tabellen samenvoegen, colspan en rowspan leren toepassen, ...</p>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>Opdracht 3 - Elise models</h3>
+                        <div>
+                            <p>Werken met floats, hoe werken floats en hoe kan overlapping problemen oplossen met ClearFix </p>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>Eindoefening - De plantenshop</h3>
+                        <div>
+                            <p>Een eenvoudige layout maken met HTML en CSS. Een goed werkend formulier maken. Een eenvoudig menu maken.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EINDE HTML PROJECTEN -->
+
+    <!-- START JAVASCRIPT PROJECTEN -->
+    <section>
+        <div class="wrapper_auto">
+            <div id="Javascript_projecten">
+                <h2>Javascript</h2>
+                <img src="img/javascript_128.png" alt="Logo Javascript" title="Logo Javascript">
+                <div class="vier_kolommen">
+                    <article>
+                        <h3>Opdracht 1 - Blad scheen schaar</h3>
+                        <div>
+                            <p>Klein spelletje gemaakt, blad steen schaar, waarbij de gebruiker speelt tegen de computer</p>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>Opdracht 2 - Voornamen</h3>
+                        <div>
+                            <p>Een lijst met voornamen maken met een tellertje per voornaam</p>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>Opdracht 3 - Geslachten</h3>
+                        <div>
+                            <p>Een json bestand inladen en een filter toepassen</p>
+                        </div>
+                    </article>
+                    <article>
+                        <h3>Eindoefening - Zeeslag</h3>
+                        <div>
+                            <p>Nagaan of je de nodige voorkennis hebt om de test van Javascript af te leggen</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- EINDE JAVASCRIPT PROJECTEN -->
+
+    <!-- BREAK LIJN -->
+    <div class="borderlijn"></div>
+
+    <!--footer-->
+    <footer>
+        <div class="wrapper_auto">
+            <p>&copy; vdab | <a href="webontwikkelaar_contact.html">mail ons</a> | <time datetime="2013-02-04">maandag 4 februari 2013</time></p>
+            <p class="schuin">Dit is een oefenpagina voor de informaticaopleidingen van de vdab: het is mogelijk dat de informatie op deze pagina verouderd en niet meer accuraat is. De hyperlinks kunnen naar niet bestaande URL's verwijzen.</p>
+        </div>
+    </footer>
+    <!--einde footer-->
+</body>
+
+</html>
