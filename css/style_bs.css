@@ -1,0 +1,135 @@
+    @charset "utf-8";
+    section:nth-child(odd),
+    header,
+    footer {
+        background-color: #dff0d8;
+        border-top: #d6e9c6;
+        border-bottom: #d6e9c6;
+    }
+    
+    #wat h1,
+    #wat p,
+    #wat li {
+        color: #2576A2;
+    }
+    
+    #wat p {
+        height: 100%;
+        margin-bottom: 1em;
+    }
+    
+    .grijs {
+        background-color: #EEE;
+        padding: 0.5em;
+        margin-left: 0em;
+        margin-bottom: 1em;
+        width: 100%;
+    }
+    
+    .navbar-brand {
+        padding-top: 10px;
+        padding-bottom: 10px
+    }
+    /* vdab_60 logo is te hoog */
+    
+    ul {
+        list-style-type: none;
+        padding: 0em;
+    }
+    
+    .navbar {
+        margin-bottom: 0
+    }
+    
+    h2 .glyphicon {
+        font-size: 0.8em;
+        margin-right: 0.4em;
+    }
+    
+    .jumbotron {
+        margin-top: 1em;
+    }
+    
+    #gmap {
+        width: 100%;
+        height: 40em;
+        float: left;
+        background-image: url(../img/gmap.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    
+    .pictures {
+        display: none;
+    }
+    
+    .labelCheckbox {
+        margin: 0.5em;
+    }
+    
+    @media screen and (min-width: 800px) {
+        .pictures {
+            display: block;
+            overflow: hidden;
+            float: left;
+            width: 100%;
+            padding-left: 1%;
+            height: 43em;
+        }
+        #gmap {
+            width: 100%;
+        }
+        .grijs {
+            background-color: #EEE;
+            padding: 0.5em;
+        }
+    }
+    
+    .picture1 {
+        width: 50%;
+        height: 35em;
+        margin: -10em 5% -10em 0em;
+        float: left;
+        background-image: url(../img/env1.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    
+    .picture2 {
+        width: 45%;
+        height: 25em;
+        float: left;
+        background-image: url(../img/env4.jpg);
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+    
+    .picture3 {
+        width: 35%;
+        height: 14em;
+        margin: 1em 5% 1em 0em;
+        float: left;
+        background-image: url(../img/env2.jpg);
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+    
+    .picture4 {
+        width: 60%;
+        height: 14em;
+        margin: 1em 0em;
+        float: left;
+        background-image: url(../img/env3.jpg);
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+    
+    .row-table {
+        display: table;
+    }
+    
+    .col-bottom {
+        float: none;
+        display: table-cell;
+        vertical-align: bottom;
+    }
