@@ -1,0 +1,741 @@
+@charset "utf-8";
+
+/*
+- tekstkleur: #665950
+- linkKleur: #4C86CF
+- linkHover: #058
+- achtergrondBleek: #FCFAF8
+- achtergrondDonker: #EBE8E5
+- achtergrondGroen: #8FB209
+- borderGrijs: #DCDAD8
+- headingGroen: #7ea107
+- headingDonker: #52463f
+- headingPaars: #9A3098
+- code: #8B1C00
+- img rand: #E9DCE9
+*/
+
+
+/* ALGEMEEN TYPOGRAFIE*/
+
+body {
+    font-family: small Arial, sans-serif;
+}
+
+p {
+    font-family: 'Droid Sans', small Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+a {
+    font-weight: bold;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: underline;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 0.5em 0 0.1em;
+    font-size: 3.5em;
+    color: #7ea107;
+}
+
+h2 {
+    text-align: left;
+    font-size: 1.7em;
+    color: #7ea107;
+}
+
+.schuin {
+    font-style: italic;
+}
+
+
+/* ALGEMEEN KLEUREN */
+
+body {
+    background: #FCFAF8;
+    color: #665950;
+}
+
+a {
+    color: #4C86CF;
+}
+
+a:hover,
+a:active {
+    color: #058;
+}
+
+em {
+    color: #9A3098;
+}
+
+code {
+    color: #8B1C00;
+}
+
+.topbanner {
+    background-color: #8FB209;
+    color: #FFF
+}
+
+.borderlijn,
+.borderlijn_met_schaduw {
+    background-color: #DCDAD8;
+}
+
+.button {
+    background-color: #6C9500;
+    color: #FFF;
+    border: solid 1px #3D7500;
+}
+
+.paars {
+    color: #9A3098;
+}
+
+.achtergronddonker {
+    background-color: #EBE8E5;
+}
+
+.achtergrondbleek {
+    background-color: #FCFAF8;
+}
+
+
+/* STRUCTUUR ALGEMEEN */
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+a img {
+    border: 0;
+}
+
+article {
+    padding-right: 1.5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+article:last-child {
+    padding-right: 0;
+}
+
+label {
+    width: 10em;
+    display: block;
+    float: left;
+}
+
+
+/* MOBILE FIRST: 1 kolom ipv 3 kolommen tonen */
+
+.drie_kolommen {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1em;
+}
+
+.vier_kolommen {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1%;
+}
+
+.drie_kolommen_form {
+    display: grid;
+    grid-template-columns: 10% 25% auto;
+}
+
+.twee_kolommen_form {
+    display: grid;
+    grid-template-columns: 35% auto;
+}
+
+.labelCheckbox {
+    width: 30em;
+    display: block;
+    float: left;
+}
+
+.wrapper_auto {
+    width: 80%;
+    margin: 0 auto 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.wrapper_visible {
+    width: 80%;
+    margin: 0 auto 0;
+    overflow: visible;
+    padding: 0;
+}
+
+.borderlijn {
+    height: 0.1em;
+}
+
+.borderlijn_met_schaduw {
+    height: 0.1em;
+    box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 0.1em 0.1em rgba(0, 0, 0, 0.25);
+}
+
+.vlotLinks {
+    float: left;
+}
+
+.vlotRechts {
+    float: right;
+}
+
+.roteerLinks {
+    -ms-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+}
+
+.roteerRechts {
+    -ms-transform: rotate(7deg);
+    transform: rotate(7deg);
+}
+
+.dunneSchaduw {
+    border: solid 0.5em #E9DCE9;
+    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, .3);
+}
+
+.dikkeSchaduw {
+    width: 25em;
+    border: solid 1em #E9DCE9;
+    box-shadow: 1em 1em 1em rgba(0, 0, 0, .3);
+    -moz-box-shadow: 1em 1em 1em rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 1em 1em 1em rgba(0, 0, 0, .3);
+}
+
+
+/* MOBILE FIRST: topbannner labels en inputs tonen als blokken  */
+
+.topbanner label {
+    float: none;
+    display: block;
+}
+
+.topbanner input {
+    float: none;
+    display: block;
+    margin: 0.5em;
+    width: 100%;
+}
+
+
+/* HEADER TYPOGRAFIE */
+
+header h3 {
+    font-size: 1.1em;
+}
+
+header a {
+    font-size: 1.2em;
+}
+
+header form {
+    font-size: 0.9em;
+}
+
+
+/* HEADER KLEUREN */
+
+header li {
+    color: #665950;
+    border-right: 1px solid #E4F0F3;
+}
+
+header a {
+    color: #665950;
+}
+
+
+/* HEADER STRUCTUUR */
+
+header h3 {
+    margin: 0.2em 0;
+}
+
+#hoofdmenu {
+    width: 100%;
+}
+
+
+/* MOBILE FIRST: Menu vertikaal */
+
+header ul {
+    padding: 0;
+    list-style: none;
+    margin-top: 0.5em;
+    width: 100%;
+}
+
+header li {
+    display: block;
+    margin: 1em;
+    width: 100%;
+}
+
+header nav {
+    float: right;
+}
+
+
+/* MOBILE FIRST: Login formulier links uitlijnen en 95% breed maken */
+
+header form {
+    float: left;
+    clear: left;
+    width: 95%;
+}
+
+header form fieldset {
+    border: 0;
+}
+
+
+/* MOBILE FIRST: Afbeeldingen niet tonen */
+
+section img {
+    display: none;
+}
+
+form legend {
+    display: none;
+}
+
+#logo img {
+    float: left;
+    margin: 0;
+    padding: 1em 0;
+    width: 10em;
+}
+
+
+/* HOME */
+
+#web_ontwikkelaar {
+    color: #52463f;
+    padding-bottom: 2.5em;
+}
+
+#web_ontwikkelaar h1 {
+    font-size: 2.5em;
+}
+
+#web_ontwikkelaar h2 {
+    font-size: 2em;
+    font-style: italic;
+}
+
+#web_ontwikkelaar h3 {
+    font-size: 1.5em;
+}
+
+#web_ontwikkelaar p {
+    font-size: 1.2em;
+}
+
+#web_ontwikkelaar img {
+    -ms-transform: rotate(7deg) skew(-15deg);
+    transform: rotate(7deg) skew(-15deg);
+    margin: 1em 0 0.5em 1em;
+}
+
+#waarom {
+    padding-bottom: 1em;
+}
+
+#waarom h2 {
+    font-size: 1.8em;
+    margin-left: 0;
+}
+
+#waarom p {
+    font-size: 1.4em;
+    margin-left: 0;
+}
+
+#waarom img {
+    float: left;
+    position: absolute;
+    margin-top: -2em;
+    margin-right: 2em;
+    width: 15em;
+}
+
+#waarom ul {
+    padding: 1%;
+    margin: 1%;
+    list-style-image: url(../img/check.png);
+}
+
+#waarom li {
+    margin: 0 0 0 3%;
+    font-size: 1.2em;
+    padding: 0.5%;
+    color: #665950;
+}
+
+#nieuws {
+    text-align: right;
+}
+
+#nieuws h3 {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin: 0;
+}
+
+#nieuws article {
+    text-align: left;
+}
+
+#nieuws img {
+    width: 6em;
+    float: right;
+}
+
+
+/* MOBILE FIRST: 1 kolom ipv 3 kolommen tonen */
+
+#nieuws article {
+    width: auto;
+    float: left;
+    padding-right: 1.5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#nieuws article:last-child {
+    padding-right: 0;
+}
+
+
+/* WAT WE DOEN */
+
+#watdoenwe {
+    overflow: visible;
+    padding: 0;
+}
+
+#watdoenwe p {
+    font-size: 1.3em;
+}
+
+#watdoenwe img {
+    margin-top: 1em;
+}
+
+#mockup {
+    width: 60%;
+    margin: 0 15%;
+}
+
+
+/* WIE WE ZIJN */
+
+#wiewezijn {
+    font-size: 1.2em;
+    overflow: visible;
+    padding-bottom: 2em;
+}
+
+.cursisten {
+    padding: 0;
+    margin-top: 1em;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.cursisten li {
+    display: block;
+    margin: 1em;
+    padding: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.cursisten li:nth-child(even) {
+    text-align: left;
+}
+
+.cursisten li:nth-child(odd) {
+    text-align: right;
+}
+
+.cursisten img {
+    display: block;
+    margin: 0 1em;
+    border: solid 0.5em #E9DCE9;
+    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, .3);
+}
+
+.cursisten li:nth-child(even) img {
+    -ms-transform: rotate(7deg);
+    transform: rotate(7deg);
+}
+
+.cursisten li:nth-child(odd) img {
+    -ms-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+}
+
+.cursisten h3 {
+    color: #52463f;
+}
+
+.cursisten a {
+    font-weight: bold;
+}
+
+.cursisten a,
+a:visited {
+    text-decoration: none;
+}
+
+.cursisten a:hover,
+a:active {
+    text-decoration: none;
+}
+
+#php_ontwikkelaar p {
+    font-size: 1.1em;
+}
+
+
+/* CONTACT */
+
+#waarvindjeons {
+    width: 70%;
+    float: left;
+}
+
+#contactgegevens {
+    width: 30%;
+    float: left;
+    font-size: 1.1em;
+}
+
+#contactgegevens ul {
+    list-style: none;
+}
+
+#gmap {
+    width: 60%;
+    height: 40em;
+    float: left;
+    background-image: url(../img/gmap.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.pictures {
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+    .pictures {
+        display: block;
+        overflow: hidden;
+        float: left;
+        width: 39%;
+        padding-left: 1%;
+        height: 43em;
+    }
+}
+
+.picture1 {
+    width: 45%;
+    height: 35em;
+    margin: -10em 5%;
+    float: left;
+    background-image: url(../img/env1.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.picture2 {
+    width: 45%;
+    height: 25em;
+    float: left;
+    background-image: url(../img/env4.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.picture3 {
+    width: 30%;
+    height: 14em;
+    margin: 1em 5%;
+    float: left;
+    background-image: url(../img/env2.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.picture4 {
+    width: 60%;
+    height: 14em;
+    margin: 1em 0;
+    float: left;
+    background-image: url(../img/env3.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+#vnaam,
+#email,
+#vragen {
+    width: 20em;
+    margin: 0.1em;
+}
+
+.formknop {
+    background-color: #6C9500;
+    color: #FFF;
+    border: outset 3px;
+    display: block;
+    float: left;
+    text-transform: uppercase;
+    width: 10em;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+
+/*
+clearfix hack
+http://nicolasgallagher.com/micro-clearfix-hack/
+*/
+
+.clearFix:before,
+.clearFix:after {
+    content: " ";
+    display: table;
+}
+
+.clearFix:after {
+    clear: both;
+}
+
+
+/* enkel voor IE6/7 */
+
+.clearFix {
+    *zoom: 1;
+}
+
+#web_ontwikkelaar img {
+    display: none;
+}
+
+
+/* DESKTOP
+    - topbannner labels en inputs op 1 lijn
+    - menu horizontaal
+    - afbeeldingen tonen
+    - 3 kolommen tonen    
+*/
+
+@media screen and (min-width: 800px) {
+    .topbanner label {
+        display: inline;
+        width: auto;
+    }
+    .topbanner input {
+        display: inline;
+        width: auto;
+    }
+    header form {
+        float: right;
+        clear: right;
+        width: auto;
+    }
+    header li {
+        display: inline;
+        margin: 0 1em 0 0;
+        padding-right: 1em;
+    }
+    header li:last-child {
+        border-right: 0 solid;
+        margin: 0;
+    }
+    section img {
+        display: block;
+    }
+    .drie_kolommen {
+        display: grid;
+        grid-template-columns: 33% auto 33%;
+        gap: 1em;
+    }
+    .vier_kolommen {
+        display: grid;
+        grid-template-columns: 24% 24% 24% 24%;
+        gap: 1%;
+    }
+    #nieuws article {
+        width: 33.33%;
+    }
+    #waarom h2 {
+        font-size: 1.8em;
+        margin-left: 10em;
+    }
+    #waarom p {
+        font-size: 1.4em;
+        margin-left: 13em;
+    }
+    #web_ontwikkelaar h1 {
+        font-size: 3.5em;
+    }
+    #hoofdmenu {
+        width: auto;
+    }
+    header ul {
+        margin-top: 5.5em;
+    }
+}
+
+
+/* DESKTOP LARGE
+    Grote foto van webontwikkeling tonen
+*/
+
+@media screen and (min-width: 1200px) {
+    #web_ontwikkelaar img {
+        display: block;
+    }
+}
