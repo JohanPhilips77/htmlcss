@@ -21,7 +21,7 @@
     .grijs {
         background-color: #EEE;
         padding: 0.5em;
-        margin-left: 0em;
+        margin-left: 0;
         margin-bottom: 1em;
         width: 100%;
     }
@@ -34,7 +34,7 @@
     
     ul {
         list-style-type: none;
-        padding: 0em;
+        padding: 0;
     }
     
     .navbar {
@@ -88,7 +88,7 @@
     .picture1 {
         width: 50%;
         height: 35em;
-        margin: -10em 5% -10em 0em;
+        margin: -10em 5% -10em 0;
         float: left;
         background-image: url(../img/env1.jpg);
         background-repeat: no-repeat;
@@ -107,7 +107,7 @@
     .picture3 {
         width: 35%;
         height: 14em;
-        margin: 1em 5% 1em 0em;
+        margin: 1em 5% 1em 0;
         float: left;
         background-image: url(../img/env2.jpg);
         background-repeat: no-repeat;
